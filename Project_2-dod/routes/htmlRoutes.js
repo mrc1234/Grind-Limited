@@ -45,9 +45,19 @@ module.exports = function(app) {
   app.get("/services", function(req, res) {
     res.render("services");
   });
-
+// Load the program page
+app.get("/program", function(req, res) {
+  res.render("program");
+  console.log ()
+});
+// Load the about page
+app.get("/about", function(req, res) {
+  res.render("about");
+  console.log ()
+});
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
   });
+  
 };

@@ -47,4 +47,8 @@ module.exports = function(app) {
   app.get("*", function(req, res) {
     res.render("404");
   });
+    // Load the program page
+    app.get("/program", function(req, res) {
+      res.render("program");
+    });
 };

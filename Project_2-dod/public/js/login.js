@@ -18,11 +18,11 @@ $(document).ready(function () {
       //id association from the login page
       var loginEmail = $("#login-email");
       var loginPassword = $("#login-password");
-     
+
       // See if login email and password are in user database
-  //Get 
-  
-    
+      //Get 
+
+
       // Getting references to our form and inputs
       var loginForm = $("form.login");
       var emailInput = $("input#email-input");
@@ -40,6 +40,7 @@ $(document).ready(function () {
           return;
         }
 
+
         // If we have an email and password we run the loginUser function and clear the form
         loginUser(userData.email, userData.password);
         emailInput.val("");
@@ -56,7 +57,10 @@ $(document).ready(function () {
           // If there's an error, log the error
         }).catch(function (err) {
           console.log(err);
-        });
-      }
 
-    });
+        });
+
+      }
+    }
+  }
+});

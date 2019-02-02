@@ -30,10 +30,10 @@
     "eslint-plugin-prettier": "^2.6.2",
     "mocha": "^5.2.0",
     "prettier": "^1.13.7"
-  }
-{
-  "name": "project_2-dod", 
+  },
   "engines": {
-    "node": "10.3.0"
+    "node": "8.12.0",
+    "npm": "6.x"
   }
 }
+

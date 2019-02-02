@@ -31,4 +31,9 @@
     "mocha": "^5.2.0",
     "prettier": "^1.13.7"
   }
+{
+  "name": "project_2-dod", 
+  "engines": {
+    "node": "10.3.0"
+  }
 }

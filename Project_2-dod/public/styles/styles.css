@@ -93,3 +93,14 @@ button:hover {
 
 
 /*end of the sign up page css*/
+
+
+/* This is for the dot back to have the style for the back of the card logos forever more++!!!!!/???? */
+
+
+.back {
+    background: url("../img/BINJ_logo.jpg") no-repeat  center;
+    background-size: 349.99px 297px;
+    opacity: .9;
+
+}

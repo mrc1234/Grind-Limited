@@ -1,37 +1,5 @@
 <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand active" href="index">Developers for Data</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <a class="nav-link" href="services">Services <span class="sr-only">(current)</span></a>
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="services">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="survey">Survey</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="signup">Sign Up</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="program">Affilate Program</a>
-        </li>
-        <li class="nav-item">
-                    <a class="nav-link" href="about">About The Grind</a>
-                </li>
-      </ul>
-
-      <!-- login form goes here -->
-      <button type="button" class="btn d-inline mr-sm-2" data-toggle="modal" data-target="#loginModal">
-        Login
-      </button>
-      <!--end login form -->
-    </div>
-  </nav>
+  {{> nav }}
 </header>
 
 
@@ -167,104 +135,15 @@
     <!-- Marketing messaging and featurettes
           ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
- <div class="cd-section" id="features">
-      <div class="container">
-        <!--     *********     FEATURES 1      *********      -->
-        <div class="features-1">
-          <div class="row">
-            <div class="col-md-8 ml-auto mr-auto">
-              <h2 class="title">Why our product is the best</h2>
-              <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn&apos;t scroll to get here. Add a button if you want the user to see more.</h5>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="info">
-                <div class="icon icon-info">
-                  <i class="material-icons">chat</i>
-                </div>
-                <h4 class="info-title">Free Chat</h4>
-                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="info">
-                <div class="icon icon-success">
-                  <i class="material-icons">verified_user</i>
-                </div>
-                <h4 class="info-title">Verified Users</h4>
-                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="info">
-                <div class="icon icon-danger">
-                  <i class="material-icons">fingerprint</i>
-                </div>
-                <h4 class="info-title">Fingerprint</h4>
-                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--     *********    END FEATURES 1      *********      -->
-        <!--     *********     FEATURES 2      *********      -->
-        <div class="features-2">
-          <div class="row">
-            <div class="col-md-8 ml-auto mr-auto text-center">
-              <h2 class="title">Why our product is the best</h2>
-              <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information.</h5>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="info info-horizontal">
-                <div class="icon icon-info">
-                  <i class="material-icons">group_work</i>
-                </div>
-                <div class="description">
-                  <h4 class="info-title">Collaborate</h4>
-                  <p>The moment you use Material Kit, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
-                  <a href="#pablo">Find more...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="info info-horizontal">
-                <div class="icon icon-danger">
-                  <i class="material-icons">airplay</i>
-                </div>
-                <div class="description">
-                  <h4 class="info-title">Airplay</h4>
-                  <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
-                  <a href="#pablo">Find more...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="info info-horizontal">
-                <div class="icon icon-success">
-                  <i class="material-icons">location_on</i>
-                </div>
-                <div class="description">
-                  <h4 class="info-title">Location Integrated</h4>
-                  <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
-                  <a href="#pablo">Find more...</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--     *********    END FEATURES 2      *********      -->
-        <!--     *********     FEATURES 3      *********      -->
-        <div class="features-3">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="phone-container">
-                <img src="./assets/img/sections/iphone.png">
-              </div>
-            </div>
-            <div class="col-md-6">
+
+<div class="features-3">
+           <center><div class="row ">
+            {{!-- <div class="col-md-6"> --}}
+              {{!-- <div class="phone-container">
+                <img src="./">
+              </div> --}}
+            </div> 
+            <div class="col-md-6 ">
               <!-- Some <br /> tags to push the text to align with the image, you can remove it if you have more text on the right side :-) -->
               <h2 class="title">Your life will be much easier</h2>
               <div class="info info-horizontal">
@@ -273,7 +152,7 @@
                 </div>
                 <div class="description">
                   <h4 class="info-title">Hundreds of Components</h4>
-                  <p>The moment you use Material Kit, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                  <p>The moment you use Grind Limited, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
                 </div>
               </div>
               <div class="info info-horizontal">
@@ -297,6 +176,7 @@
             </div>
           </div>
         </div>
+        </center>
         <!--     *********    END FEATURES 3      *********      -->
         <!--     *********     FEATURES 4      *********      -->
         <div class="features-4">
@@ -314,7 +194,7 @@
                 </div>
                 <div class="description">
                   <h4 class="info-title">For Developers</h4>
-                  <p>The moment you use Material Kit, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                  <p>The moment you use Grind Limited, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
                 </div>
               </div>
               <div class="info info-horizontal">
@@ -369,7 +249,7 @@
                   <i class="material-icons">code</i>
                 </div>
                 <h4 class="info-title">For Developers</h4>
-                <p>The moment you use Material Kit, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                <p>The moment you use Grind Limited, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
               </div>
             </div>
             <div class="col-sm-4">
@@ -378,7 +258,7 @@
                   <i class="material-icons">format_paint</i>
                 </div>
                 <h4 class="info-title">For Designers</h4>
-                <p>The moment you use Material Kit, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                <p>The moment you use Grind Limited, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
               </div>
             </div>
             <div class="col-sm-4">
@@ -387,7 +267,7 @@
                   <i class="material-icons">dashboard</i>
                 </div>
                 <h4 class="info-title">Bootstrap Grid</h4>
-                <p>The moment you use Material Kit, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                <p>The moment you use Grind Limited, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
               </div>
             </div>
           </div>
@@ -398,7 +278,7 @@
                   <i class="material-icons">view_carousel</i>
                 </div>
                 <h4 class="info-title">Example Pages Included</h4>
-                <p>The moment you use Material Kit, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                <p>The moment you use Grind Limited, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
               </div>
             </div>
             <div class="col-sm-4">
@@ -407,7 +287,7 @@
                   <i class="material-icons">access_time</i>
                 </div>
                 <h4 class="info-title">Save Time</h4>
-                <p>The moment you use Material Kit, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                <p>The moment you use Grind Limited, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
               </div>
             </div>
             <div class="col-sm-4">
@@ -416,14 +296,12 @@
                   <i class="material-icons">attach_money</i>
                 </div>
                 <h4 class="info-title">Save Money</h4>
-                <p>The moment you use Material Kit, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                <p>The moment you use Grind Limited, you know you&#x2019;ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-
 
     <!-- FOOTER -->
  <footer class="footer" data-background-color="black">

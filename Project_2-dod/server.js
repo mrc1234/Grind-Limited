@@ -9,7 +9,7 @@ var passport = require("./config/passport");
 var db = require("./models");
 
 var app = express();
-var PORT = process.env.PORT || 3002;
+var PORT = process.env.PORT || 3015;
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));

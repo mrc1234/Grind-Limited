@@ -1,106 +1,201 @@
 .list-group-item {
   line-height: 2.5;
 }
+
 /*the following is the css for the sign up page*/
-body {font-family: Arial, Helvetica, sans-serif;
-background-color: #ddd;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
+  padding: 0 !important;
+  margin: 0 !important;
 }
-* {box-sizing: border-box}
 
-p {font-weight:400;}
+* {
+  box-sizing: border-box;
+}
 
-h1 {font-weight:900;}
+.wrapper {
+  padding-top: 70px !important;
+}
 
-h2, h3, h4, h5, h6 {font-weight:700;}
+p {
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
 
 label {
-    font-weight: 600;
+  font-weight: 600;
 }
-
 
 /* Full-width input fields*/
-input[type=text], input[type=password], input[type=string] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
+input[type='text'],
+input[type='password'],
+input[type='string'] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
 }
 
-input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
+input[type='text']:focus,
+input[type='password']:focus {
+  background-color: #ddd;
+  outline: none;
 }
 
 .form-group.input {
-    padding:10px;
-    
+  padding: 10px;
 }
 
 hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
 }
 
+a:hover,
+a:focus {
+  color: #00bcd4 !important;
+}
 
 /* Set a style for all buttons */
 button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    
-    opacity: 0.9;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+
+  opacity: 0.9;
 }
 
 button:hover {
-    opacity:1;
+  opacity: 1;
 }
 
 /* Extra styles for the cancel button */
 .cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
+  padding: 14px 20px;
+  background-color: #f44336;
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
+.cancelbtn,
+.signupbtn {
   float: left;
   width: 50%;
 }
 
 /* Add padding to container elements */
-.container {
-    padding: 16px;
-}
+/* .container {
+  padding: 16px;
+} */
 
 /* Clear floats */
 .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: '';
+  clear: both;
+  display: table;
 }
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-       width: 100%;
-    }
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
 }
-
 
 /*end of the sign up page css*/
 
-
 /* This is for the dot back to have the style for the back of the card logos forever more++!!!!!/???? */
 
-
 .back {
-    background: url("../img/BINJ_logo.jpg") no-repeat  center;
-    background-size: 349.99px 297px;
-    opacity: .9;
+  background: url('../img/BINJ_logo.jpg') no-repeat center;
+  background-size: 250px;
+}
 
+/* .overlay {
+  background: rgba(61, 61, 61, 0.356);
+  overflow: hidden;
+  height: 100%;
+} */
+
+/* .card-back-body {
+  background: rgba(0, 0, 0, 0.1);
+} */
+
+.title-back {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 4px 6px;
+  color: white !important;
+}
+
+.des-back {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 4px 6px;
+  color: white !important;
+}
+
+/* .alert {
+  display: none;
+} */
+
+.navbar-brand {
+  margin-left: 8px;
+}
+
+.navbar {
+  padding: 0.625rem 0.75rem !important;
+}
+
+.logo-head {
+  width: 150px;
+  padding-bottom: 5px;
+}
+
+.logo-foot {
+  width: 100px;
+}
+
+.card .card-title {
+  margin-bottom: 0.625rem !important;
+}
+
+.loginbtn {
+  width: 100%;
+  margin-left: 1.25rem !important;
+}
+
+.top-con {
+  padding-top: 100px;
+}
+
+.spacer {
+  width: 100%;
+  padding: 50px;
+  clear: both;
+  display: inline-block;
+}
+
+footer {
+  background-color: #212121;
+  color: #ffffff;
+}
+
+.foot-icon {
+  color: #e91e63;
 }

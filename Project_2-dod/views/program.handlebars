@@ -1,42 +1,11 @@
-<header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand active" href="index">Grind Limited </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <a class="nav-link" href="services">Services <span class="sr-only">(current)</span></a>
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="services">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="survey">Survey</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="signup">Sign Up</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="program">Affilate Program</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about">About The Grind</a>
-                </li>
-            </ul>
-            <!-- login button -->
-            <button type="button" class="btn d-inline mr-sm-2" data-toggle="modal" data-target="#loginModal">
-                Login
-            </button>
-            <!--end login form -->
-        </div>
-    </nav>
-</header>
-
-
+{{#if loggedin}}
+{{> headerauth}}
+{{else}}
+{{> header}}
+{{/if}}
 <div class="container" style="margin-top:20px;">
 
-    <div class="row">
+    <div class="top-con row">
         <div class="col-8 offset-2">
             <form id="signup-form">
                 <h2><b>Affilate Program</b></h2>
@@ -66,26 +35,17 @@
                         </div>
                     </div>
                     <div class="back">
-                        <div class="card-body">
-                            <h5 class="card-title">
+                        <div class="card-body card-back-body">
+                            <h5 class="title-back card-title">
                                 Do more...
                             </h5>
-                            <p class="card-description">
+                            <p class="des-back card-description">
                                 You can read this article or share it with your friends and family on different
                                 networks...
                             </p>
                             <div class="footer text-center">
-                                <a href="#pablo" class="btn btn-rose btn-round">
-                                    <i class="material-icons">subject</i> Read
-                                </a>
-                                <a href="#pablo" class="btn btn-just-icon btn-round btn-twitter">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <a href="#pablo" class="btn btn-just-icon btn-round btn-dribbble">
-                                    <i class="fa fa-dribbble"></i>
-                                </a>
-                                <a href="#pablo" class="btn btn-just-icon btn-round btn-facebook">
-                                    <i class="fa fa-facebook"></i>
+                                <a href="#" class="btn btn-rose code btn-round">
+                                    <i class="material-icons">subject</i> Get Code
                                 </a>
                             </div>
                         </div>
@@ -751,5 +711,8 @@
     </div>
     <!-- end login modal -->
 </div>
+<div class="spacer"></div>
+{{> footer}}
 
 <script src="js/signup.js"></script>
+<script src="js/codes.js"></script>

@@ -150,9 +150,9 @@ button:hover {
   color: white !important;
 }
 
-/* .alert {
+.alert {
   display: none;
-} */
+}
 
 .navbar-brand {
   margin-left: 8px;

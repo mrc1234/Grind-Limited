@@ -10,14 +10,14 @@ var db = require('./models');
 
 var app = express();
 var PORT = process.env.PORT || 3015;
-var connection = mysql.createConnection ({
-  "username":"ba97d3a8ce420f",
-  "password":	"ff2099b9f656221", 
-  "database": "heroku_8db51349e799989",
-  "host": "us-cdbr-iron-east-03.cleardb.net",
-  "use_env_variable": "CLEARDB_DATABASE_URL",
-  "dialect": "mysql"
-});
+var mysql_options =  {
+  database: 'heroku_8db51349e799989',
+  user: 'db_usba97d3a8ce420fername',
+  password: 'ff2099b9f656221'
+ }
+ 
+ var mysqlConn = mysql2.createConnection(mysql_options);
+
 // Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());

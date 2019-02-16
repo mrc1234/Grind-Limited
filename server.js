@@ -16,7 +16,7 @@ var mysql_options =  {
   password: 'ff2099b9f656221'
  }
  
- var mysqlConn = mysql2.createConnection(mysql_options);
+ var mysqlConn = mysql.createConnection(mysql_options);
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));

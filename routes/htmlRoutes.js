@@ -73,8 +73,8 @@ module.exports = function(app) {
       loggedin: isAuth
     });
   });
-  // Load the program page
-  app.get('/program', isAuthenticated, function(req, res) {
+  // Load the program pageisAuthenticated
+  app.get('/program', function(req, res) {
     var isAuth = false;
     if (req.user) {
       isAuth = true;

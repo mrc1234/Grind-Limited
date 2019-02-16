@@ -123,11 +123,16 @@ button:hover {
 
 /* This is for the dot back to have the style for the back of the card logos forever more++!!!!!/???? */
 
-.back {
+.broke {
   background: url('../img/BINJ_logo.jpg') no-repeat center;
   background-size: 250px;
 }
 
+.cycle {
+  background: url('../img/cycle.png') no-repeat center;
+  background-size: 250px;
+}
+}
 /* .overlay {
   background: rgba(61, 61, 61, 0.356);
   overflow: hidden;

@@ -44,6 +44,7 @@ $(document).ready(function() {
           password: password
         })
           .then(function(data) {
+            console.log("here");
             window.location.replace('/program');
             // If there's an error, log the error
           })

@@ -2,7 +2,7 @@ require('dotenv').config();
 var express = require('express');
 var exphbs = require('express-handlebars');
 var session = require('express-session');
-var mysql = require('mysql2');
+var mysql = require('mysql');
 // Requiring passport as we've configured it
 var passport = require('./config/passport');
 
@@ -10,13 +10,14 @@ var db = require('./models');
 
 var app = express();
 var PORT = process.env.PORT || 3015;
-var mysql_options =  {
-  database: 'heroku_8db51349e799989',
-  user: 'db_usba97d3a8ce420fername',
-  password: 'ff2099b9f656221'
- }
+var connection = mysql.createConnection({
+  host     : 'us-cdbr-iron-east-03.cleardb.net',
+  user     : 'ba97d3a8ce420f',
+  password : 'ff2099b9f656221',
+  database : 'heroku_8db51349e799989'
+ });
  
- var mysqlConn = mysql.createConnection(mysql_options);
+ connection.connect();
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));

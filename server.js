@@ -1,67 +1,52 @@
-require('dotenv').config();
-var express = require('express');
-var exphbs = require('express-handlebars');
-var session = require('express-session');
-// var mysql = require('mysql');
-// Requiring passport as we've configured it
-var passport = require('./config/passport');
+require("dotenv").config();
+const connection = require("./config/connection.js"),
+  express = require("express"),
+  exphbs = require("express-handlebars"),
+  session = require("express-session"),
+  // Requiring passport as we've configured it
+  passport = require("./config/passport");
 
-var db = require('./models');
-
-var app = express();
-var PORT = process.env.PORT || 3015;
-// var connection = mysql.createConnection({
-//   host     : 'us-cdbr-iron-east-03.cleardb.net',
-//   user     : 'ba97d3a8ce420f',
-//   password : 'ff2099b9f656221',
-//   database : 'heroku_8db51349e799989'
-//  });
- 
-//  connection.connect();
+const app = express();
+const PORT = process.env.PORT || 3015;
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static("public"));
 
 // We need to use sessions to keep track of our user's login status
 app.use(
-  session({ secret: 'keyboard cat', resave: true, saveUninitialized: true })
+  session({ secret: "keyboard cat", resave: true, saveUninitialized: true })
 );
 app.use(passport.initialize());
 app.use(passport.session());
 
 // Handlebars
 app.engine(
-  'handlebars',
+  "handlebars",
   exphbs({
-    defaultLayout: 'main'
+    defaultLayout: "main"
   })
 );
-app.set('view engine', 'handlebars');
+app.set("view engine", "handlebars");
 
 // Routes
-require('./routes/apiRoutes')(app);
-require('./routes/htmlRoutes')(app);
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
 
 // IMPORTANT: Set syncOptions to force: false, or you will lose everything in the database each time you run app.
-var syncOptions = { force: false };
+const syncOptions = { force: false };
 
 // If running a test, set syncOptions.force to true
 // clearing the `testdb`
-if (process.env.NODE_ENV === 'test') {
+if (process.env.NODE_ENV === "test") {
   syncOptions.force = true;
 }
 
-// Starting the server, syncing our models ------------------------------------/
-db.sequelize.sync(syncOptions).then(function() {
-  app.listen(PORT, function() {
-    console.log(
-      '==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.',
-      PORT,
-      PORT
-    );
-  });
+app.listen(PORT, function() {
+  console.log(
+    "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
+    PORT,
+    PORT
+  );
 });
-
-module.exports = app;

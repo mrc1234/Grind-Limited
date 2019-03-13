@@ -4,121 +4,207 @@
 {{> header}}
 {{/if}}
 <div id="home" class="top-con">
-    <div class="container">
-        <!-- login modal -->
-        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form class="form-inline mt-2 mt-md-0">
-                            <input class="form-control mr-sm-2" type="email" id="email-input" placeholder="Email">
-                            <input type="password" class="form-control mr-sm-2" id="password-input" placeholder="Password">
-                            <button type="submit" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal"
-                                data-target="#popUpWindow">Login</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <!-- login modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="form-inline mt-2 mt-md-0">
+              <input class="form-control mr-sm-2" type="email" id="email-input" placeholder="Email">
+              <input type="password" class="form-control mr-sm-2" id="password-input" placeholder="Password">
+              <button type="submit" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal"
+                data-target="#popUpWindow">Login</button>
+            </form>
+          </div>
         </div>
-        <!-- end login modal -->
-        <div class="row">
-            <div class="col-8 offset-2">
-                <!--Get rid of this message -->
+      </div>
+    </div>
+    <!-- end login modal -->
+    {{!-- <div class="row">
+            <div class="col-8 offset-2"> --}}
+    <!--Get rid of this message -->
 
-                <h2>Services</h2>
-               <div class="pricing-4" id="pricing-4">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 ml-auto mr-auto text-center">
-              <h2 class="title">Pick the best plan for you</h2>
-              <h5 class="description">You have Free Unlimited Updates and Premium Support on each package.</h5>
-              <div class="section-space"></div>
+    <h2>Services</h2>
+    <div class="pricing-4" id="pricing-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ml-auto mr-auto text-center">
+            <h2 class="title">Pick the best plan for Your Online Presence</h2>
+            <h5 class="description">You have Free Unlimited Free Content and Premium Support on each package.</h5>
+            <div class="section-space"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="card card-pricing card-plain">
+              <div class="card-body">
+                <h6 class="card-category">Startup</h6>
+                <h1 class="card-title">
+                  <small>$</small>0</h1>
+                <ul>
+                  <li><i class="material-icons text-success">check</i> Dashboard Tools</li>
+                  <li><i class="material-icons text-danger">close</i> Content AI Checker </li>
+                  <li><i class="material-icons text-danger">close</i> Daily Social Media Postings on up to 6 platforms
+                  </li>
+                  <li><i class="material-icons text-danger">close</i> Personalized Landing Page and Reviews</li>
+                </ul>
+              </div>
+              <div class="card-footer justify-content-center">
+                <a href="#pablo" class="btn btn-danger btn-round">
+                  Downgrade Plan
+                </a>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-3 col-md-6">
-              <div class="card card-pricing card-plain">
-                <div class="card-body">
-                  <h6 class="card-category">Startup</h6>
-                  <h1 class="card-title">
-                    <small>$</small>0</h1>
-                  <ul>
-                    <li><i class="material-icons text-success">check</i> Sharing Tools</li>
-                    <li><i class="material-icons text-danger">close</i> Design Tools</li>
-                    <li><i class="material-icons text-danger">close</i> Private Messages</li>
-                    <li><i class="material-icons text-danger">close</i> Personal Brand</li>
-                  </ul>
-                </div>
-                <div class="card-footer justify-content-center">
-                  <a href="#pablo" class="btn btn-danger btn-round">
-                    Downgrade Plan
+          <div class="col-lg-3 col-md-6">
+            <div class="card card-pricing card-raised bg-success">
+              <div class="card-body">
+                <h6 class="card-category">Small Company</h6>
+                <h1 class="card-title">
+                  <small>$</small>89</h1>
+                <ul>
+                  <li><i class="material-icons text-success">check</i> Dashboard Tools</li>
+                  <li><i class="material-icons text-success">check</i> Content AI Checker </li>
+                  <li><i class="material-icons text-danger">close</i> Daily Social Media Postings on up to 6 platforms
+                  </li>
+                  <li><i class="material-icons text-danger">close</i> Personalized Landing Page and Reviews</li>
+                </ul>
+              </div>
+              <div class="card-footer justify-content-center">
+                <a href="#pablo" class="btn btn-white btn-raised disabled btn-round">
+                  Current Plan
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card card-pricing card-plain">
+              <div class="card-body">
+                <h6 class="card-category">Large Company</h6>
+                <h1 class="card-title">
+                  <small>$</small>189</h1>
+                <ul>
+                  <li><i class="material-icons text-success">check</i> Dashboard Tools</li>
+                  <li><i class="material-icons text-success">check</i> Content AI Checker </li>
+                  <li><i class="material-icons text-success">check</i> Daily Social Media Postings on up to 6 platforms
+                  </li>
+                  <li><i class="material-icons text-danger">close</i> Personalized Landing Page and Reviews</li>
+                </ul>
+              </div>
+              <div class="card-footer justify-content-center">
+                <a href="#pablo" class="btn btn-success btn-round">
+                  Upgrade Plan
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card card-pricing card-plain">
+              <div class="card-body ">
+                <h6 class="card-category">Enterprise</h6>
+                <h1 class="card-title">
+                  <small>$</small>389</h1>
+                <ul>
+                  <li><i class="material-icons text-success">check</i> Dashboard Tools</li>
+                  <li><i class="material-icons text-success">check</i> Content AI Checker </li>
+                  <li><i class="material-icons text-success">check</i> Daily Social Media Postings on up to 6 platforms
+                  </li>
+                  <li><i class="material-icons text-success">check</i> Personalized Landing Page and Reviews</li>
+                </ul>
+              </div>
+              <div class="card-footer justify-content-center">
+                <a href="#pablo" class="btn btn-success btn-round">
+                  Upgrade Plan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials-1 section-image" style="background-image: url('./assets/img/dg2.jpg')">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ml-auto mr-auto text-center">
+            <h2 class="title">Our Clients Love Us</h2>
+            <h5 class="description">You need more information? Check what other persons are saying about our product.
+              They are very happy with their purchase.</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-testimonial">
+              <div class="icon">
+                <i class="material-icons">format_quote</i>
+              </div>
+              <div class="card-body ">
+                <h5 class="card-description">
+                  Grind Limited continues to provide my clients valuable
+                  information on social media that has, in-turn, built up my credibility as a market
+                  professional.”
+                </h5>
+              </div>
+              <div class="card-footer ">
+                <h4 class="card-title">Alec Thompson</h4>
+                <h6 class="card-category">@alecthompson</h6>
+                <div class="card-avatar">
+                  <a href="#pablo">
+                    <img class="img" src="./assets/img/faces/card-profile1-square.jpg">
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="card card-pricing card-raised bg-success">
-                <div class="card-body">
-                  <h6 class="card-category">Small Company</h6>
-                  <h1 class="card-title">
-                    <small>$</small>89</h1>
-                  <ul>
-                    <li><i class="material-icons text-success">check</i> Sharing Tools</li>
-                    <li><i class="material-icons text-success">check</i> Design Tools</li>
-                    <li><i class="material-icons text-danger">close</i> Private Messages</li>
-                    <li><i class="material-icons text-danger">close</i> Personal Brand</li>
-                  </ul>
-                </div>
-                <div class="card-footer justify-content-center">
-                  <a href="#pablo" class="btn btn-white btn-raised disabled btn-round">
-                    Current Plan
+          </div>
+          <div class="col-md-4">
+            <div class="card card-testimonial">
+              <div class="icon">
+                <i class="material-icons">format_quote</i>
+              </div>
+              <div class="card-body ">
+                <h5 class="card-description">
+                  “When starting my salon, I needed to build my following on
+                  social media. Grind Limited helped me not only do this but gained me customers in the
+                  process.”
+                </h5>
+              </div>
+              <div class="card-footer ">
+                <h4 class="card-title">Gina Andrew</h4>
+                <h6 class="card-category">@ginaandrew</h6>
+                <div class="card-avatar">
+                  <a href="#pablo">
+                    <img class="img" src="./assets/img/faces/card-profile4-square.jpg">
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="card card-pricing card-plain">
-                <div class="card-body">
-                  <h6 class="card-category">Large Company</h6>
-                  <h1 class="card-title">
-                    <small>$</small>189</h1>
-                  <ul>
-                    <li><i class="material-icons text-success">check</i> Sharing Tools</li>
-                    <li><i class="material-icons text-success">check</i> Design Tools</li>
-                    <li><i class="material-icons text-success">check</i> Private Messages</li>
-                    <li><i class="material-icons text-danger">close</i> Personal Brand</li>
-                  </ul>
-                </div>
-                <div class="card-footer justify-content-center">
-                  <a href="#pablo" class="btn btn-success btn-round">
-                    Upgrade Plan
-                  </a>
-                </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-testimonial">
+              <div class="icon">
+                <i class="material-icons">format_quote</i>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="card card-pricing card-plain">
-                <div class="card-body ">
-                  <h6 class="card-category">Enterprise</h6>
-                  <h1 class="card-title">
-                    <small>$</small>389</h1>
-                  <ul>
-                    <li><i class="material-icons text-success">check</i> Sharing Tools</li>
-                    <li><i class="material-icons text-success">check</i> Design Tools</li>
-                    <li><i class="material-icons text-success">check</i> Private Messages</li>
-                    <li><i class="material-icons text-success">check</i> Personal Brand</li>
-                  </ul>
-                </div>
-                <div class="card-footer justify-content-center">
-                  <a href="#pablo" class="btn btn-success btn-round">
-                    Upgrade Plan
+              <div class="card-body ">
+                <h5 class="card-description">
+                  &quot;“We know what we are doing in the office but did not have
+                  a clue on how to use social media to get more people in the door. SocialChimp helped customers find my
+                  practice and positioned me as a leader in the dental community.”
+                  &quot;
+                </h5>
+              </div>
+              <div class="card-footer ">
+                <h4 class="card-title">George West</h4>
+                <h6 class="card-category">@georgewest</h6>
+                <div class="card-avatar">
+                  <a href="#pablo">
+                    <img class="img" src="./assets/img/faces/card-profile2-square.jpg">
                   </a>
                 </div>
               </div>
@@ -126,124 +212,43 @@
           </div>
         </div>
       </div>
-                <div class="testimonials-1 section-image" style="background-image: url('./assets/img/dg2.jpg')">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 ml-auto mr-auto text-center">
-                                <h2 class="title">Our Clients Love Us</h2>
-                                <h5 class="description">You need more information? Check what other persons are saying
-                                    about our product. They are very happy with their purchase.</h5>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card card-testimonial">
-                                    <div class="icon">
-                                        <i class="material-icons">format_quote</i>
-                                    </div>
-                                    <div class="card-body ">
-                                        <h5 class="card-description">
-                                            Your products, all the kits that I have downloaded from your site and
-                                            worked with are sooo cool! I love the color mixtures, cards... everything.
-                                            Keep up the great work!
-                                        </h5>
-                                    </div>
-                                    <div class="card-footer ">
-                                        <h4 class="card-title">Alec Thompson</h4>
-                                        <h6 class="card-category">@alecthompson</h6>
-                                        <div class="card-avatar">
-                                            <a href="#pablo">
-                                                <img class="img" src="./assets/img/faces/card-profile1-square.jpg">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card card-testimonial">
-                                    <div class="icon">
-                                        <i class="material-icons">format_quote</i>
-                                    </div>
-                                    <div class="card-body ">
-                                        <h5 class="card-description">
-                                            &quot;Don&apos;t be scared of the truth because we need to restart the
-                                            human foundation in truth. That&apos;s why I love you like Kanye loves
-                                            Kanye I love Rick Owens&#x2019; bed design but the back is not so
-                                            attractive&quot;
-                                        </h5>
-                                    </div>
-                                    <div class="card-footer ">
-                                        <h4 class="card-title">Gina Andrew</h4>
-                                        <h6 class="card-category">@ginaandrew</h6>
-                                        <div class="card-avatar">
-                                            <a href="#pablo">
-                                                <img class="img" src="./assets/img/faces/card-profile4-square.jpg">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card card-testimonial">
-                                    <div class="icon">
-                                        <i class="material-icons">format_quote</i>
-                                    </div>
-                                    <div class="card-body ">
-                                        <h5 class="card-description">
-                                            &quot;Your products, all the kits that I have downloaded from your site and
-                                            worked with are sooo cool! I love the color mixtures, cards... everything.
-                                            Keep up the great work!&quot;
-                                        </h5>
-                                    </div>
-                                    <div class="card-footer ">
-                                        <h4 class="card-title">George West</h4>
-                                        <h6 class="card-category">@georgewest</h6>
-                                        <div class="card-avatar">
-                                            <a href="#pablo">
-                                                <img class="img" src="./assets/img/faces/card-profile2-square.jpg">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FAQs -->
-                <div class="container page-container">
-
-                    <div class="page-header text-center">
-                        <h4 class="h1">FAQ</h4>
-                        <h5 class="h2">
-                            <a href="https://help.woorank.com/hc/en-us/sections/360000016905-Billing" target="_blank">
-                                Payment & Cancellation </a>
-                        </h5>
-                    </div>
-
-                    <p><span style="font-weight: 400;"><strong>Anyone can try Developers For Data
-                                for free during their 14-day free trial period.</strong> That’s
-                            full access to Reviews, Projects, Keyword Tool and Site Crawl for 2
-                            weeks. So we won’t charge your credit card or PayPal account (<a href="https://help.Developers For Data.com/hc/en-us/articles/360000140405">except
-                                for a $1 hold to validate your credit card</a>) until your trial
-                            ends. During this time we’ll help get your Developers For Data account
-                            up and running so you’ll be able to get the most out of your trial.</span></p>
-                    <p><span style="font-weight: 400;">In that 14-day window, you can cancel your
-                            trial with 0 commitment on your end. </span></p>
-                    <p><span style="font-weight: 400;">At the end of your trial, we’ll send you a
-                            quick heads up that your Developers For Data subscription is about to
-                            begin and we’ll then charge your credit card or PayPal account. </span></p>
-                    <p><span style="font-weight: 400;">Developers For Data has a <a href="https://www.woorank.com/en/p/tos">48-hour
-                                refund policy</a>, so if you forget to cancel your subscription
-                            we’ll be happy to refund your payment the next two days. Please contact
-                            us at <a href="mailto:support@developersfordata.com">support@developersfordata.com</a>.</span></p>
-                    <p><span style="font-weight: 400;">In general, refunds can take a couple of
-                            days to be reflected on your credit card or PayPal statements. Refunds
-                            issued to international credit cards can take more. </span></p>
-                </div>
-            </div>
-        </div>
     </div>
+
+    <!-- FAQs -->
+    <div class="container page-container">
+
+      <div class="page-header text-center">
+        <h4 class="h1">FAQ</h4>
+        <h5 class="h2">
+          <a href="https://help.woorank.com/hc/en-us/sections/360000016905-Billing" target="_blank">
+            Payment & Cancellation </a>
+        </h5>
+      </div>
+
+      <p><span style="font-weight: 400;"><strong>Anyone can try Developers For Data
+            for free during their 14-day free trial period.</strong> That’s
+          full access to Reviews, Projects, Keyword Tool and Site Crawl for 2
+          weeks. So we won’t charge your credit card or PayPal account (<a
+            href="https://help.Developers For Data.com/hc/en-us/articles/360000140405">except
+            for a $1 hold to validate your credit card</a>) until your trial
+          ends. During this time we’ll help get your Developers For Data account
+          up and running so you’ll be able to get the most out of your trial.</span></p>
+      <p><span style="font-weight: 400;">In that 14-day window, you can cancel your
+          trial with 0 commitment on your end. </span></p>
+      <p><span style="font-weight: 400;">At the end of your trial, we’ll send you a
+          quick heads up that your Developers For Data subscription is about to
+          begin and we’ll then charge your credit card or PayPal account. </span></p>
+      <p><span style="font-weight: 400;">Developers For Data has a <a href="https://www.woorank.com/en/p/tos">48-hour
+            refund policy</a>, so if you forget to cancel your subscription
+          we’ll be happy to refund your payment the next two days. Please contact
+          us at <a href="mailto:support@developersfordata.com">support@developersfordata.com</a>.</span></p>
+      <p><span style="font-weight: 400;">In general, refunds can take a couple of
+          days to be reflected on your credit card or PayPal statements. Refunds
+          issued to international credit cards can take more. </span></p>
+    </div>
+  </div>
+</div>
+</div>
 </div>
 <div class="spacer"></div>
 {{> footer}}

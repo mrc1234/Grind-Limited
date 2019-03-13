@@ -3,6 +3,7 @@ var passport = require('../config/passport');
 //AWS
 var AWS = require('aws-sdk');
 var uuid = require('uuid');
+const orm = require("./orm.js");
 
 // var keyName = require("../public/js/survey");
 //--this line above causes the following error;
@@ -15,12 +16,28 @@ module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
-  app.post('/api/login', passport.authenticate('local'), function(req, res) {
+  app.post('/api/login', function(req, res) {
     // Since we're doing a POST with javascript, we can't actually redirect that post into a GET request
     // So we're sending the user back the route to the members page because the redirect will happen on the front end
     // They won't get this or even be able to access this page if they aren't authed
     // res.json('/program');
-    console.log(res);
+    console.log('api login getting called')
+    console.log(req.body)
+
+    let loginData = {
+      userEmail: req.body.email,
+      userPassword: req.body.password
+  }
+  orm.login(loginData, result => {
+      result = JSON.stringify(result);
+      result = JSON.parse(result);
+
+      console.log(result[0])
+      // loginData.userProfileData = result;
+      res.status(201).send(result[0]);
+      
+  });
+    //console.log(res);
   });
   // Logoutd
   app.get('/api/logout', function(req, res) {
